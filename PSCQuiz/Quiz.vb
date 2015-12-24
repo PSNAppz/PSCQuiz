@@ -11,11 +11,9 @@ Public Class Quiz
         ProgressBar1.Maximum = 30
         Timer1.Enabled = True
         Using file As New System.IO.StreamReader(TextFilePath)
-            Dim line As String = file.ReadLine()
-            If line Is Nothing Then
-                Throw New ArgumentOutOfRangeException("File Error")
-            End If
-            Label1.Text = line
+
+            Dim QUES As Integer = file.ReadLine()
+            Label1.Text = file.ReadLine()
             RadioButton1.Text = file.ReadLine()
             RadioButton2.Text = file.ReadLine()
             RadioButton3.Text = file.ReadLine()
@@ -32,5 +30,9 @@ Public Class Quiz
         If ProgressBar1.Value = ProgressBar1.Maximum Then
             Timer1.Enabled = False
         End If
+    End Sub
+
+    Private Sub Quiz_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Form1.Close()
     End Sub
 End Class

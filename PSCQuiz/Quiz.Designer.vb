@@ -41,10 +41,9 @@ Partial Class Quiz
         Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton1.Location = New System.Drawing.Point(67, 351)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(126, 24)
+        Me.RadioButton1.Size = New System.Drawing.Size(14, 13)
         Me.RadioButton1.TabIndex = 0
         Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'RadioButton2
@@ -53,10 +52,9 @@ Partial Class Quiz
         Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton2.Location = New System.Drawing.Point(67, 453)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(126, 24)
+        Me.RadioButton2.Size = New System.Drawing.Size(14, 13)
         Me.RadioButton2.TabIndex = 0
         Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton1"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'RadioButton3
@@ -65,10 +63,9 @@ Partial Class Quiz
         Me.RadioButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton3.Location = New System.Drawing.Point(563, 351)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(126, 24)
+        Me.RadioButton3.Size = New System.Drawing.Size(14, 13)
         Me.RadioButton3.TabIndex = 0
         Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton1"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'RadioButton4
@@ -77,10 +74,9 @@ Partial Class Quiz
         Me.RadioButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton4.Location = New System.Drawing.Point(563, 453)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(126, 24)
+        Me.RadioButton4.Size = New System.Drawing.Size(14, 13)
         Me.RadioButton4.TabIndex = 0
         Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "RadioButton1"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
         'Label1
@@ -89,9 +85,8 @@ Partial Class Quiz
         Me.Label1.Font = New System.Drawing.Font("Myriad Pro", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(92, 134)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(101, 36)
+        Me.Label1.Size = New System.Drawing.Size(0, 36)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Label1"
         '
         'Button1
         '
