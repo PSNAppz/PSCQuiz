@@ -108,9 +108,13 @@ Partial Class Quiz
         '
         'ProgressBar1
         '
+        Me.ProgressBar1.BackColor = System.Drawing.Color.DarkGreen
+        Me.ProgressBar1.ForeColor = System.Drawing.Color.Indigo
         Me.ProgressBar1.Location = New System.Drawing.Point(731, 28)
+        Me.ProgressBar1.MarqueeAnimationSpeed = 1000
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(216, 2)
+        Me.ProgressBar1.Size = New System.Drawing.Size(216, 3)
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar1.TabIndex = 3
         '
         'Timer1

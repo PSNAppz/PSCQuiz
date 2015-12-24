@@ -1,6 +1,10 @@
 ﻿Imports System.IO
+Imports System.Runtime.InteropServices
 
 Public Class Quiz
+    <DllImport("user32.dll", SetLastError:=True, CharSet:=CharSet.Auto)> _
+    Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal Msg As UInteger, ByVal wParam As Integer, ByVal lParam As Integer) As IntPtr
+    End Function
     Dim SCORE As Integer = 0
     Dim val As Integer = 30
     Private Sub Quiz_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -25,10 +29,13 @@ Public Class Quiz
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ProgressBar1.Value += 1
-        Label2.Text = val & " Sec"
         val -= 1
+        Label2.Text = val & " Sec"
         If ProgressBar1.Value = ProgressBar1.Maximum Then
             Timer1.Enabled = False
+        End If
+        If ProgressBar1.Value > 25 Then
+            SendMessage(ProgressBar1.Handle, 1040, 2, 0)
         End If
     End Sub
 
