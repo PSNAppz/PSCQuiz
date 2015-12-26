@@ -7,25 +7,39 @@ Public Class Quiz
     End Function
     Dim SCORE As Integer = 0
     Dim val As Integer = 30
+    Dim QUES As Integer = 0
+    Dim Line As Integer = 1
+    Dim allLines As List(Of String) = New List(Of String)
+    Dim TextFilePath As String = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Quiz.txt")
+
     Private Sub Quiz_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim TextFilePath As String = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Quiz.txt")
-
-
         ProgressBar1.Minimum = 0
         ProgressBar1.Maximum = 30
         Timer1.Enabled = True
-        Using file As New System.IO.StreamReader(TextFilePath)
-
-            Dim QUES As Integer = file.ReadLine()
-            Label1.Text = file.ReadLine()
-            RadioButton1.Text = file.ReadLine()
-            RadioButton2.Text = file.ReadLine()
-            RadioButton3.Text = file.ReadLine()
-            RadioButton4.Text = file.ReadLine()
-        End Using
+        Next_Prev_Ques(Line + QUES)
 
 
     End Sub
+    Public Function Next_Prev_Ques(quesno As Integer) As Integer
+        Line = quesno
+        Using file As New System.IO.StreamReader(TextFilePath)
+
+            Do While Not file.EndOfStream
+                allLines.Add(file.ReadLine())
+            Loop
+
+        End Using
+        QUES = ReadLine(Line, allLines)
+        Label1.Text = ReadLine(Line + 1, allLines)
+        RadioButton1.Text = ReadLine(Line + 2, allLines)
+        RadioButton2.Text = ReadLine(Line + 3, allLines)
+        RadioButton3.Text = ReadLine(Line + 4, allLines)
+        RadioButton4.Text = ReadLine(Line + 5, allLines)
+        Return Line
+    End Function
+    Public Function ReadLine(lineNumber As Integer, lines As List(Of String)) As String
+        Return lines(lineNumber - 1)
+    End Function
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ProgressBar1.Value += 1
@@ -41,5 +55,16 @@ Public Class Quiz
 
     Private Sub Quiz_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Form1.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        MsgBox(Line + QUES + 5)
+        Next_Prev_Ques(Line + QUES + 4)
+        Me.Refresh()
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Next_Prev_Ques(Line + QUES + 5)
     End Sub
 End Class
