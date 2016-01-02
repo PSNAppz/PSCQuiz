@@ -11,6 +11,7 @@ Public Class Quiz
     End Function
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        Button3.Hide()
         ProgressBar1.Minimum = 0
         ProgressBar1.Maximum = 30
         Timer1.Enabled = True
@@ -31,6 +32,7 @@ Public Class Quiz
 
         If listOfQuestions.Count > 0 Then
             LoadQuestion(0)
+            MsgBox(listOfQuestions.Count)
         End If
 
     End Sub
@@ -39,6 +41,9 @@ Public Class Quiz
 
         Dim question = listOfQuestions(questionIndex)
         currentQuestion = questionIndex
+        If listOfQuestions.Count - 1 = currentQuestion Then
+            Button3.Show()
+        End If
         With question
             Label1.Text = .Question
             RadioButton1.Text = .Choice1
@@ -47,7 +52,6 @@ Public Class Quiz
             RadioButton4.Text = .Choice4
             anskey = .Answer
         End With
-
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -57,8 +61,11 @@ Public Class Quiz
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
         If (currentQuestion < listOfQuestions.Count - 1) Then
             LoadQuestion(currentQuestion + 1)
+
+
         End If
     End Sub
     Private Sub Quiz_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -70,9 +77,19 @@ Public Class Quiz
         Label2.Text = val & " Sec"
         If ProgressBar1.Value = ProgressBar1.Maximum Then
             Timer1.Enabled = False
+
         End If
         If ProgressBar1.Value > 23 Then
             SendMessage(ProgressBar1.Handle, 1040, 2, 0)
+
+        End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim Re As Integer = MsgBox("Are you sure you want to submit?",
+    vbYesNo, "Submit")
+        If (Re = 6) Then
+            MsgBox("Helo")
         End If
     End Sub
 End Class

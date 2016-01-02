@@ -33,6 +33,7 @@ Partial Class Quiz
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'RadioButton1
@@ -108,12 +109,12 @@ Partial Class Quiz
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.BackColor = System.Drawing.Color.DarkGreen
+        Me.ProgressBar1.BackColor = System.Drawing.Color.LightGoldenrodYellow
         Me.ProgressBar1.ForeColor = System.Drawing.Color.Indigo
         Me.ProgressBar1.Location = New System.Drawing.Point(731, 28)
         Me.ProgressBar1.MarqueeAnimationSpeed = 1000
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(216, 3)
+        Me.ProgressBar1.Size = New System.Drawing.Size(216, 20)
         Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar1.TabIndex = 3
         '
@@ -129,6 +130,16 @@ Partial Class Quiz
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 4
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.GreenYellow
+        Me.Button3.Location = New System.Drawing.Point(872, 518)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Submit"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'Quiz
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -138,6 +149,7 @@ Partial Class Quiz
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RadioButton4)
@@ -160,4 +172,5 @@ Partial Class Quiz
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As Button
 End Class
