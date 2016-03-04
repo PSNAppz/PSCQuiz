@@ -32,7 +32,6 @@ Public Class Quiz
 
         If listOfQuestions.Count > 0 Then
             LoadQuestion(0)
-            MsgBox(listOfQuestions.Count)
         End If
 
     End Sub

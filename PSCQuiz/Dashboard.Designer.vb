@@ -22,7 +22,6 @@ Partial Class Dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -32,49 +31,63 @@ Partial Class Dashboard
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(540, 226)
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button1.Location = New System.Drawing.Point(7, 55)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(193, 99)
+        Me.Button1.Size = New System.Drawing.Size(185, 40)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "General"
+        Me.Button1.Text = "Malayalam"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(786, 226)
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button2.Location = New System.Drawing.Point(7, 103)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(193, 99)
+        Me.Button2.Size = New System.Drawing.Size(185, 40)
         Me.Button2.TabIndex = 0
         Me.Button2.Text = "Physics"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(786, 368)
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button3.Location = New System.Drawing.Point(7, 199)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(193, 99)
+        Me.Button3.Size = New System.Drawing.Size(185, 40)
         Me.Button3.TabIndex = 0
         Me.Button3.Text = "Maths"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(540, 368)
+        Me.Button4.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button4.Location = New System.Drawing.Point(7, 151)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(193, 99)
+        Me.Button4.Size = New System.Drawing.Size(185, 40)
         Me.Button4.TabIndex = 0
         Me.Button4.Text = "Chemistry"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(915, 540)
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI Symbol", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(915, 541)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 1
@@ -85,59 +98,131 @@ Partial Class Dashboard
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkGray
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(529, 152)
+        Me.Panel1.Location = New System.Drawing.Point(528, 151)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(461, 323)
+        Me.Panel1.Size = New System.Drawing.Size(462, 322)
         Me.Panel1.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(181, 24)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Symbol", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(174, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(144, 24)
+        Me.Label1.Size = New System.Drawing.Size(142, 30)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Select Subject"
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Location = New System.Drawing.Point(12, 12)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Controls.Add(Me.Button6)
+        Me.Panel2.Controls.Add(Me.Button3)
+        Me.Panel2.Controls.Add(Me.Button4)
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Location = New System.Drawing.Point(3, 26)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(200, 564)
+        Me.Panel2.Size = New System.Drawing.Size(201, 564)
         Me.Panel2.TabIndex = 3
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 43)
+        Me.Label2.Location = New System.Drawing.Point(21, 44)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(0, 13)
         Me.Label2.TabIndex = 4
+        '
+        'Button6
+        '
+        Me.Button6.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button6.Location = New System.Drawing.Point(7, 247)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(185, 40)
+        Me.Button6.TabIndex = 0
+        Me.Button6.Text = " Add New +"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1026, 24)
+        Me.MenuStrip1.TabIndex = 4
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QuitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'QuitToolStripMenuItem
+        '
+        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(97, 22)
+        Me.QuitToolStripMenuItem.Text = "Quit"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToolStripMenuItem})
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.EditToolStripMenuItem.Text = "Edit"
+        '
+        'AddToolStripMenuItem
+        '
+        Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
+        Me.AddToolStripMenuItem.Text = "Add"
+        '
+        'Button7
+        '
+        Me.Button7.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button7.Location = New System.Drawing.Point(210, 81)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(185, 40)
+        Me.Button7.TabIndex = 0
+        Me.Button7.Text = " Add Question"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button8.Location = New System.Drawing.Point(210, 127)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(185, 40)
+        Me.Button8.TabIndex = 0
+        Me.Button8.Text = "Add Subject"
+        Me.Button8.UseVisualStyleBackColor = True
         '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackColor = System.Drawing.Color.Crimson
         Me.ClientSize = New System.Drawing.Size(1026, 588)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.ForeColor = System.Drawing.Color.Crimson
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Dashboard"
-        Me.Text = "Dashboard"
+        Me.Text = " "
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
@@ -149,4 +234,12 @@ Partial Class Dashboard
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents QuitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AddToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
 End Class
