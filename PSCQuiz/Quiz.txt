@@ -1,30 +1,618 @@
-﻿Google എഴുത്ത് ഉപകരണങ്ങൾ ഓൺലൈനിൽ ...
-I Don't know
-May be he knows
-Who knows
-Who cares?
-a
-eqsdasd
-wq
-qw
-qw
-wq
-b
-What id
-sd
-df
-gh
-we
-c
-What id e
-sd
-df
-gh
-we
-d
-What id q
-sd
-df
-gh
-we
-a
+﻿If x is the first of five consecutive odd numbers then what is their average ?
+x
+x+1
+x+4
+x+3
+3
+Which of the following number is divisible by 24 ?
+76300
+78132
+80424
+81234
+3
+If (x-1)(x-2)(x²-4)=0 then what are the possible values of x ?
+-2 only
+2 only
+1 and 2 only
+1.-2 or 2 only
+4
+What is the next number in the following series : 9.8.6.3.``` ?
+0
+2
+-1
+1
+3
+For all numbers x.y. and z. the operation x*y=x-xy` What is x*(y*z) ?
+x-xy+xyz
+x-xy-xz-xyz
+x²-xy-x²yz
+x+xy-xz+xy²z
+1
+What is the largest possible value of the expression : (x+2)(3-x)(2+x)²(2x-6)(2x+4) ?
+-576
+12
+0
+Cannot be determined
+3
+In a group of 15. 7 have studied Statistics. 8 have studied Computer. and 3 have not studied either` How many of these studied both ?
+0
+4
+5
+3
+4
+A truck and a car leave from the same location at 9 AM` The truck travels directly north at 40 miles/hour while the car travels directly east at 30 miles/hour` How far apart are they at 1 PM ?
+150 miles
+280 miles
+200 miles
+350 miles
+3
+If 4 DRAX=5 LINX and 2 LINX=6 PINX. 24 DRAX will equal how many PINX ?
+90
+60
+45
+80
+1
+Two clocks are set to the same time. but one clock loses 1 minute every hour and the other clock gains 2 minutes every 3 hours` After 24 hours. what will be the differece between the two clocks time ?
+24
+40
+48
+60
+2
+What is the value of this expression : (x-a)(x-b)(x-c)```````(x-y)(x-z) ?
+Any number greater than 0
+Between 0 and 2.14.74.83.648
+Only 0
+Cannot be determined
+3
+How many words can be formed using the the characters of the word NDCQUIZ ?
+720
+2400
+1040
+5040
+4
+If 1/X=3/2 and 1/N=4/9 then what is the value of XN-1/XN ?
+2/3
+5/6
+1
+0
+2
+Which of the following pair best expresses the relationship similar to the pair. CHAPTER:NOVEL ?
+epilogue:play
+stanza:poem
+verse:drama
+rhyme:meter
+2
+Which of the following pair best expresses the relationship similar to the pair. ANGER:FURY ?
+infatuation:affection
+love:adoration
+sullen:punting
+resentment:scowl
+2
+'The scientist who _______ at his task despite failure after failure. exemplifies _______ or strength of character.' What words are appropriate for the blanks of this sentence ?
+persists...determination
+rejoices...preserverance
+balks...humility
+surrenders...fortitude
+1
+What does ADB stand for ?
+Asian Development Bank
+Asian Domestic Bank
+Asian Democracy Bureau
+Asian Development Bureau
+1
+Who is the writer of the book 'Treasure Island' ?
+Johann Wyss
+Charles Dickens
+Roberet Louis Stevenson
+Arther Connan Doyle
+3
+The first English Dictionary was compiled by -
+Izzak Walton
+Samuel Johnson
+Samuel Butler
+Sir Thomas Browne
+2
+Which famous actor of Hollywood has become muslim when he studied Islam for one of his movie ?
+Arnold Swchargenegar
+Will Smith
+Brus Willis
+David Duchavony
+2
+Who first translated the Holy Quaran in Bangla ?
+Keshabchandra Sen
+Bhai Girishchandra Sen
+Maolana Moniruzzaman
+Maolana Akram Kha
+2
+What was the first recorded speech in the gramophone ?
+Jack and Jill went up the hill
+Hellow World
+Twinkle twinkle little star
+Mary had a little lamb
+4
+Who is the writer of the book 'A Brief History of Time' ?
+Albert Einstein
+Sir Aizak Newton
+Thomas Alva Edison
+Stephen William Hockins
+4
+What does ISDN stand for ?
+International Subscribers Data Network
+Integrated Services Digital Network
+International Security Database Netwok
+Integrated Secure Data Network
+2
+Which is the largest district of Bangladesh ?
+Barisal
+Rajshahi
+Dinajpur
+Ranga mati
+4
+What is the name of the currency of Switzerland ?
+Dollar
+Cron
+Frank
+Pound
+3
+Which day is considered as the World Environment Day ?
+5th June
+5th July
+5th August
+5th September
+1
+Which famous USA based tele-communication company has been bankrupted a few days ago ?
+Worldcom
+Worldnet
+ComWorld
+TelCom
+1
+Which is the largest island in the world ?
+Australia
+New Gini
+Iceland
+Greenland
+4
+What is the capital of Kuwait ?
+Doha
+Kuwait City
+Manama
+Rabat
+2
+Which one of the following is the file extension for Word 2000 templates ?
+`doc
+`dot
+`rtf
+`wpd
+2
+Which one of the following selections is used to reset the text color to the default text color ?
+Normal color
+Automatic color
+Black color
+Default color
+2
+Which is NOT a wizard that you can use in Microsoft Word 2000 ?
+Letter Wizard
+Calendar Wizard
+Web Page Wizard
+E-mail Wizard
+4
+Which one of the following moves the cursor to the beginning of the next page?
+Ctrl+Down Arrow
+Ctrl+Page Down
+Ctrl+End
+Page Down
+2
+Which one of the following is used to change part of a formula in Microsoft Excel. while preserving the basic format?  
+F1 and cursor keys  
+F2 and cursor keys  
+F3 and cursor keys  
+F4 and cursor keys  
+2
+Which one of the following is the long date format ?  
+m-dd-yyyy  
+mm-dd-yy  
+mm-yyyy  
+mm-dd-yyyy
+4
+In Microsoft Excel. which one of the following will return a Null value if the criteria is NOT met?  
+=if(a1>b1.a1.null)  
+=if(a1>b1;a1;"")  
+=if(a1>b1.a1.")  
+=if(a1>b1.a1."")  
+4
+Which keyboard short-cut opens the "Replace" dialog box in Microsoft Excel ?  
+Ctrl + F  
+Ctrl + H  
+Ctrl + Y  
+Ctrl + Z  
+2
+In what way can you modify a table if you need to add your own data-entry checks?
+Design View  
+The Database Wizard
+Datasheet View
+The Table Wizard
+1
+Which one of the following actions can you NOT perform with the table wizard?
+Choose fields  
+Join fields  
+Create a Key Field  
+Rename fields  
+3
+Which one of the following is NOT a method to create a report?  
+Chart Wizard  
+Report Wizard  
+AutoReport: Columnar  
+AutoReport: Justified  
+1
+What desktop database engine is used in Access 2000?  
+Microsoft Jet 3`5  
+Microsoft Jet 3`51  
+Microsoft Jet 4`0  
+Microsoft Jet 7`0  
+3
+In the 200th birthday of Charles Babbez. a fully functional 'Difference Engine' has been made in _______ `
+1991
+1992
+1993
+1994
+1
+When did the IBM company first start their business ?
+1921
+1922
+1923
+1924
+4
+Which computer is considered as the first complete digital computer ?
+ENIAC
+EDVAC
+Mark-I
+ABC
+3
+The first operating system was invented in ______ for IBM company`
+1950
+1951
+1948
+1949
+2
+Micro-Pro company created the first word processor named WordStar in _______`
+1980
+1982
+1983
+1981
+4
+What is the octal euivalent of the decimal number 83`6875 ?
+123`450
+123`540
+123`045
+123`054
+2
+What is sum in binary of the hexadecimal number 9F`c6 and decimal number 277`36 ?
+101011111`00111111
+101011111`00111110
+101011110`00111110
+101011111`10111110
+2
+What is the BCD equivalent of the decimal number 853 ?
+100010111
+110010111
+101010110
+100000111
+1
+Which logic gate is considered as the universal gate ?
+NAND Gate
+NOR Gate
+XOR Gate
+NAND and NOR Gate
+4
+What is simplified form of the folloing logic function : z(y+z)(x+y+z) ?
+z
+z+x
+xy+yz
+zx+yz
+1
+Which of the following addressing mode follows Direct Mode addressing ?
+ADD  R2.R7
+ADD  60.49.50
+MOV  R2.92
+CLA  R4
+2
+Which of the following is not a ROM ?
+MROM
+PROM
+FPROM
+EPROM
+3
+Which of the following is not a local bus ?
+PCI Bus
+VESA Bus
+IEEE1394
+ISA
+4
+Which of the following computer uses pipe-lining process ?
+Cray-I
+Cyber-205
+VP-200
+All of the above
+4
+Which of the following devices is not an output device ?
+Digitizer
+VDU
+Plotter
+Printer
+1
+Which one of the following describes the name for an algorithm that solves a problem by calling itself ?
+Reserved  
+Recursive  
+Repetitive  
+Repeating  
+2
+Which of the following criteria must be met for binary sort ?
+Data must be stored in an Stack
+Data must be numerical
+Data must be sorted
+Data must be in ASCII format
+3
+Which one of the following is NOT a data structure ?
+Array
+Table
+Stack
+Tree
+2
+Which one of the following statements will open a random-access file if Quick BASIC ?
+OPEN "Q`DAT" FOR INPUT AS #1
+OPEN "I".2."Q`DAT" FOR RANDOM
+OPEN "Q`DAT" FOR RANDOM AS #1 LEN=10
+OPEN "Q`DAT" FOR RANDOM AS #1
+3
+Which one of the following statements is not a valid Quick BASIC statement ?
+CLS 1
+VIEW SCREEN 1 TO 10
+PRINT "NDC" ;" ";"IT Festival"."2002"
+PRINT UCASE("it") + LCASE("festival")
+4
+Which one of the following is not a data comuunication element ?
+Transmitter
+Receiver
+Destination
+Software
+4
+Which one of the following is not a network structure ?
+Star Network
+Mesh Network
+LAN Network
+Hybrid Network
+3
+Which one of the following is a network protocol ?
+SNAD
+Decent
+DSN
+ISO
+2
+When was ARPANET first used in USA's universities ?
+1969
+1968
+1967
+1966
+1
+Which one of the following is not a country domain ?
+ar
+nl
+em
+id
+3
+Which one of the following is a valid email address ?
+admin@emran-hasan`com
+md-emran-hasan@yahoo`com
+ehasan@yahoo`com
+rubayet@emran-hasan`bd`com
+2
+The IRC first was first introduced by _______`
+Jarkko Oikarinen
+Jarko Oikarinen
+Jarkko Oikarin
+Jarkko Oikaren
+1
+Which one of the following is not a search engine ?
+Yahoo!
+Altavista
+Downseek
+Gogle
+4
+Which one of the following is a major function of the W3C?  
+To set standards for web-development languages
+To approve connectivity to new networks  
+To assign and distribute IP addresses  
+To operate the root DNS server
+1
+What does http stand for ?
+hyper transaction transfer protocol
+hyper text transfer protocol
+hyper text transmission protocol
+hyper transmitted text protocol
+3
+What kind of web site MSN`com is ?
+Search Engine
+Web Portal
+News Site
+Entertainment Site
+2
+Which one of the following is an aspect of the Java programming language that makes it attractive for Web applications ?  
+Platform independence  
+Reliability  
+Throughput  
+Speed  
+1
+Which one of the following BEST describes a URL ?  
+A web address  
+A lexical name registered with Internic  
+A numeric IP address  
+A standard syntax for identifying a resource on the Internet
+4
+Which one of the following is used to identify the content type of a Web document or file to a browser ?  
+Windows registry entries  
+The doctype field in the http header  
+The protocol name  
+MIME type  
+2
+Which one of the following is NOT a common function of modern web browser ?  
+Digitally signing user input  
+Executing downloaded programs within the browser's environment  
+Formatting user input into http requests  
+Executing scripted commands  
+1
+What DOM object is often used to enable HTML documents to have buttons that highlight when the mouse hovers over them ?  
+Image  
+Frame  
+Applet    
+Anchor  
+3
+Which one of the following is NOT a common consideration when designing Web-based applications ?  
+Client bandwidth requirements  
+Network protocol support  
+Network data security  
+Server security  
+1
+Which one of the following protocols is typically NOT supported by modern web browsers ?  
+https  
+http  
+wais  
+ssl  
+3
+Which one of the following is NOT a free email service provider ?
+Big Foot
+Google
+Yahoo!
+Hotmail
+2
+If x is the first of five consecutive odd numbers then what is their average ?
+x
+x+1
+x+4
+x+3
+3
+Which of the following number is divisible by 24 ?
+76300
+78132
+80424
+81234
+3
+If (x-1)(x-2)(x²-4)=0 then what are the possible values of x ?
+-2 only
+2 only
+1 and 2 only
+1.-2 or 2 only
+4
+What is the next number in the following series : 9.8.6.3.``` ?
+0
+2
+-1
+1
+3
+For all numbers x.y. and z. the operation x*y=x-xy` What is x*(y*z) ?
+x-xy+xyz
+x-xy-xz-xyz
+x²-xy-x²yz
+x+xy-xz+xy²z
+1
+What is the largest possible value of the expression : (x+2)(3-x)(2+x)²(2x-6)(2x+4) ?
+-576
+12
+0
+Cannot be determined
+3
+In a group of 15. 7 have studied Statistics. 8 have studied Computer. and 3 have not studied either` How many of these studied both ?
+0
+4
+5
+3
+4
+A truck and a car leave from the same location at 9 AM` The truck travels directly north at 40 miles/hour while the car travels directly east at 30 miles/hour` How far apart are they at 1 PM ?
+150 miles
+280 miles
+200 miles
+350 miles
+3
+If 4 DRAX=5 LINX and 2 LINX=6 PINX. 24 DRAX will equal how many PINX ?
+90
+60
+45
+80
+1
+Two clocks are set to the same time. but one clock loses 1 minute every hour and the other clock gains 2 minutes every 3 hours` After 24 hours. what will be the differece between the two clocks time ?
+24
+40
+48
+60
+2
+What is the value of this expression : (x-a)(x-b)(x-c)```````(x-y)(x-z) ?
+Any number greater than 0
+Between 0 and 2.14.74.83.648
+Only 0
+Cannot be determined
+3
+How many words can be formed using the the characters of the word NDCQUIZ ?
+720
+2400
+1040
+5040
+4
+If 1/X=3/2 and 1/N=4/9 then what is the value of XN-1/XN ?
+2/3
+5/6
+1
+0
+2
+Which of the following pair best expresses the relationship similar to the pair. CHAPTER:NOVEL ?
+epilogue:play
+stanza:poem
+verse:drama
+rhyme:meter
+2
+In a group of 15. 7 have studied Statistics. 8 have studied Computer. and 3 have not studied either` How many of these studied both ?
+0
+4
+5
+3
+4
+A truck and a car leave from the same location at 9 AM` The truck travels directly north at 40 miles/hour while the car travels directly east at 30 miles/hour` How far apart are they at 1 PM ?
+150 miles
+280 miles
+200 miles
+350 miles
+3
+If 4 DRAX=5 LINX and 2 LINX=6 PINX. 24 DRAX will equal how many PINX ?
+90
+60
+45
+80
+1
+Two clocks are set to the same time. but one clock loses 1 minute every hour and the other clock gains 2 minutes every 3 hours` After 24 hours. what will be the differece between the two clocks time ?
+24
+40
+48
+60
+2
+What is the value of this expression : (x-a)(x-b)(x-c)```````(x-y)(x-z) ?
+Any number greater than 0
+Between 0 and 2.14.74.83.648
+Only 0
+Cannot be determined
+3
+How many words can be formed using the the characters of the word NDCQUIZ ?
+720
+2400
+1040
+5040
+4
+If 1/X=3/2 and 1/N=4/9 then what is the value of XN-1/XN ?
+2/3
+5/6
+1
+0
+2
+Which of the following pair best expresses the relationship similar to the pair. CHAPTER:NOVEL ?
+epilogue:play
+stanza:poem
+verse:drama
+rhyme:meter
+2

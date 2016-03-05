@@ -1,6 +1,7 @@
-﻿Public Class AddQues
-    Private listOfQuestions As List(Of Question) = New List(Of Question)
-    Dim writer As New System.IO.StreamWriter("Quiz.txt", True)
+﻿Imports System
+Imports System.IO
+Public Class AddQues
+    Public writer As System.IO.StreamWriter = File.AppendText("Quiz.txt")
 
     Dim key As Char
     Private Sub AddQues_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -12,21 +13,27 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If (Not (TextBox1.Text = "") Or Not (TextBox2.Text = "") Or Not (TextBox3.Text = "") Or (TextBox4.Text = "") Or Not (TextBox5.Text = "")) Then
-            writer.WriteLine(TextBox1.Text)
-            writer.WriteLine(TextBox2.Text)
-            writer.WriteLine(TextBox3.Text)
-            writer.WriteLine(TextBox4.Text)
-            writer.WriteLine(TextBox5.Text)
-            writer.WriteLine(key)
-            writer.Close()
-            Me.Close()
-            Dashboard.Show()
+        If ((TextBox1.Text = "") Or (TextBox2.Text = "") Or (TextBox3.Text = "") Or (TextBox4.Text = "") Or (TextBox5.Text = "")) Then
+
+            MsgBox("Please Enter all the fields")
+
         ElseIf (Not (RadioButton1.Checked) And Not (RadioButton2.Checked) And Not (RadioButton3.Checked) And Not (RadioButton4.Checked))
             MsgBox("Please Select an Answer Key")
 
         Else
-            MsgBox("Please Enter all the fields")
+            Try
+                writer.WriteLine()
+                writer.WriteLine(TextBox1.Text)
+                writer.WriteLine(TextBox2.Text)
+                writer.WriteLine(TextBox3.Text)
+                writer.WriteLine(TextBox4.Text)
+                writer.WriteLine(TextBox5.Text)
+                writer.WriteLine(key)
+                writer.Close()
+                Me.Close()
+                Dashboard.Show()
+            Catch ex As Exception
+            End Try
         End If
     End Sub
 
@@ -44,5 +51,10 @@
 
     Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
         key = "d"
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Close()
+        Dashboard.Show()
     End Sub
 End Class

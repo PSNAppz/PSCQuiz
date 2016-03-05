@@ -2,6 +2,9 @@
 Imports System.Runtime.InteropServices
 
 Public Class Quiz
+    Public ques As Integer = 1
+    Dim Shuffle = New Integer() {}
+    Dim SCORE As Integer = 0
     Dim val As Integer = 30
     Public anskey As String
     Private currentQuestion As Integer
@@ -9,8 +12,10 @@ Public Class Quiz
     <DllImport("user32.dll", SetLastError:=True, CharSet:=CharSet.Auto)>
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal Msg As UInteger, ByVal wParam As Integer, ByVal lParam As Integer) As IntPtr
     End Function
-
-    Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Public Sub Reset_all()
+        val = 0
+        SCORE = 0
+        ProgressBar1.Value = 0
         Button3.Hide()
         ProgressBar1.Minimum = 0
         ProgressBar1.Maximum = 30
@@ -33,7 +38,10 @@ Public Class Quiz
         If listOfQuestions.Count > 0 Then
             LoadQuestion(0)
         End If
+    End Sub
 
+    Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        Reset_all()
     End Sub
 
     Sub LoadQuestion(questionIndex As Integer)
@@ -41,9 +49,10 @@ Public Class Quiz
         Dim question = listOfQuestions(questionIndex)
         currentQuestion = questionIndex
         If listOfQuestions.Count - 1 = currentQuestion Then
-            Button3.Show()
+
         End If
         With question
+            Label3.Text = ques
             Label1.Text = .Question
             RadioButton1.Text = .Choice1
             RadioButton2.Text = .Choice2
@@ -54,17 +63,25 @@ Public Class Quiz
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        SCORE -= 1
         If (currentQuestion > 0) Then
-            LoadQuestion(currentQuestion - 1)
+            If (ques > 0) Then
+                ques -= 1
+                LoadQuestion(currentQuestion - 1)
+            End If
         End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If (anskey = "a" And RadioButton1.Checked = True Or anskey = "b" And RadioButton2.Checked = True Or anskey = "c" And RadioButton3.Checked = True Or anskey = "d" And RadioButton4.Checked = True) Then
+            SCORE += 1
+        End If
 
         If (currentQuestion < listOfQuestions.Count - 1) Then
-            LoadQuestion(currentQuestion + 1)
-
-
+            If (ques <= 99) Then
+                ques += 1
+                LoadQuestion(currentQuestion + 1)
+            End If
         End If
     End Sub
     Private Sub Quiz_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -80,15 +97,26 @@ Public Class Quiz
         End If
         If ProgressBar1.Value > 23 Then
             SendMessage(ProgressBar1.Handle, 1040, 2, 0)
+            Button3.Show()
+
+        End If
+        If ProgressBar1.Value = 30 Then
 
         End If
     End Sub
 
+    Private Sub SubmitResult()
+        MsgBox("You have Scored " + SCORE.ToString + " Out of 100")
+    End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim Re As Integer = MsgBox("Are you sure you want to submit?",
     vbYesNo, "Submit")
         If (Re = 6) Then
-            MsgBox("Helo")
+            SubmitResult()
+            Try
+                Dashboard.Show()
+            Catch ex As Exception
+            End Try
         End If
     End Sub
 End Class

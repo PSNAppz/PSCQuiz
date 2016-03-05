@@ -40,10 +40,12 @@ Partial Class AddQues
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ComboBox1
         '
+        Me.ComboBox1.DisplayMember = "Malayalam"
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(181, 126)
         Me.ComboBox1.Name = "ComboBox1"
@@ -92,6 +94,7 @@ Partial Class AddQues
         '
         'TextBox1
         '
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(181, 175)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -159,7 +162,7 @@ Partial Class AddQues
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(449, 494)
+        Me.Button1.Location = New System.Drawing.Point(345, 503)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(172, 36)
         Me.Button1.TabIndex = 4
@@ -214,6 +217,16 @@ Partial Class AddQues
         Me.RadioButton4.Text = "Select as Answer"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(523, 503)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(172, 36)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Cancel"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'AddQues
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -224,6 +237,7 @@ Partial Class AddQues
         Me.Controls.Add(Me.RadioButton3)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
@@ -263,4 +277,5 @@ Partial Class AddQues
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents Button2 As Button
 End Class
