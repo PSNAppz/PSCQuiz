@@ -1,10 +1,14 @@
-﻿Imports System.IO
+Imports System.IO
 Imports System.Runtime.InteropServices
 
 Public Class Quiz
     Public ques As Integer = 1
+    Dim numbers(100) As Integer 'Added an array to store the viewed question index
+    Dim i As Integer = 0
+
+    Dim r As New Random
     Dim Shuffle As Integer = 0
-    Dim SCORE As Integer = 0
+    Public SCORE As Integer = 0
     Dim val As Integer = 30
     Public anskey As String
     Private currentQuestion As Integer
@@ -37,6 +41,7 @@ Public Class Quiz
 
         If listOfQuestions.Count > 0 Then
             LoadQuestion(0)
+            i = 0
         End If
     End Sub
 
@@ -67,22 +72,31 @@ Public Class Quiz
             SCORE -= 1
         End If
         If (currentQuestion > 0) Then
-            If (ques > 0) Then
+            If (ques > 1) Then
+                i -= 1
+                numbers(0) = 0
                 ques -= 1
-                LoadQuestion(currentQuestion - 1)
+                LoadQuestion(numbers(i))
             End If
         End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If (anskey = "a" And RadioButton1.Checked = True Or anskey = "b" And RadioButton2.Checked = True Or anskey = "c" And RadioButton3.Checked = True Or anskey = "d" And RadioButton4.Checked = True) Then
+        Dim a As Integer = r.Next(0, listOfQuestions.Count - 1)
+        Shuffle = a
+        MsgBox(RadioButton1.Checked.ToString)
+        MsgBox(anskey)
+        If (anskey = "1" And RadioButton1.Checked = True Or anskey = "2" And RadioButton2.Checked = True Or anskey = "3" And RadioButton3.Checked = True Or anskey = "4" And RadioButton4.Checked = True) Then
             SCORE += 1
+            MsgBox(RadioButton1.Checked.ToString)
         End If
 
         If (currentQuestion < listOfQuestions.Count - 1) Then
             If (ques <= 99) Then
+                i += 1
+                numbers(i) = Shuffle
                 ques += 1
-                LoadQuestion(currentQuestion + 1)
+                LoadQuestion(numbers(i))
             End If
         End If
     End Sub
@@ -117,6 +131,7 @@ Public Class Quiz
         If (Re = 6) Then
             SubmitResult()
             Try
+                Dashboard.DashBoard_Update()
                 Me.Close()
                 Dashboard.Show()
             Catch ex As Exception
