@@ -39,6 +39,8 @@ Partial Class Dashboard
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -207,6 +209,28 @@ Partial Class Dashboard
         Me.Button4.Text = "Remove Question"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Button8
+        '
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button8.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button8.Location = New System.Drawing.Point(210, 389)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(281, 40)
+        Me.Button8.TabIndex = 0
+        Me.Button8.Text = "Manage Account"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button9.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button9.Location = New System.Drawing.Point(210, 433)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(281, 40)
+        Me.Button9.TabIndex = 0
+        Me.Button9.Text = "Quiz Settings"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -215,6 +239,8 @@ Partial Class Dashboard
         Me.ClientSize = New System.Drawing.Size(1026, 588)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Panel1)
@@ -249,4 +275,6 @@ Partial Class Dashboard
     Friend WithEvents Label3 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
 End Class
