@@ -36,6 +36,9 @@ Partial Class Dashboard
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -74,6 +77,9 @@ Partial Class Dashboard
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkGray
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(528, 151)
         Me.Panel1.Name = "Panel1"
@@ -84,7 +90,7 @@ Partial Class Dashboard
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Symbol", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(221, 24)
+        Me.Label1.Location = New System.Drawing.Point(210, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(64, 30)
         Me.Label1.TabIndex = 0
@@ -165,6 +171,37 @@ Partial Class Dashboard
         Me.Button7.Text = " Add Question"
         Me.Button7.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Symbol", 15.75!)
+        Me.Label3.Location = New System.Drawing.Point(30, 141)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(130, 30)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "Your Score : "
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Symbol", 15.75!)
+        Me.Label4.Location = New System.Drawing.Point(74, 98)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(80, 30)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Name :"
+        '
+        'Button3
+        '
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI Symbol", 14.25!)
+        Me.Button3.Location = New System.Drawing.Point(156, 259)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(185, 40)
+        Me.Button3.TabIndex = 0
+        Me.Button3.Text = "Reset"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -204,4 +241,7 @@ Partial Class Dashboard
     Friend WithEvents AddToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Button3 As Button
 End Class

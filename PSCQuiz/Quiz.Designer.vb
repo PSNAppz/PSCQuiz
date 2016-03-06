@@ -86,7 +86,7 @@ Partial Class Quiz
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.Label1.Location = New System.Drawing.Point(68, 118)
-        Me.Label1.MaximumSize = New System.Drawing.Size(650, 100)
+        Me.Label1.MaximumSize = New System.Drawing.Size(900, 200)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(126, 45)
         Me.Label1.TabIndex = 1

@@ -20,7 +20,7 @@
 
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button7.Click, Button3.Click
         AddQues.Show()
         Me.Hide()
     End Sub

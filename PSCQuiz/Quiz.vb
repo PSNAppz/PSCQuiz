@@ -13,7 +13,7 @@ Public Class Quiz
     Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal Msg As UInteger, ByVal wParam As Integer, ByVal lParam As Integer) As IntPtr
     End Function
     Public Sub Reset_all()
-        val = 0
+        val = 30
         SCORE = 0
         ProgressBar1.Value = 0
         Button3.Hide()
@@ -63,7 +63,9 @@ Public Class Quiz
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        SCORE -= 1
+        If (SCORE > 0) Then
+            SCORE -= 1
+        End If
         If (currentQuestion > 0) Then
             If (ques > 0) Then
                 ques -= 1
@@ -85,7 +87,8 @@ Public Class Quiz
         End If
     End Sub
     Private Sub Quiz_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Form1.Close()
+        Dashboard.Show()
+        Me.Hide()
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ProgressBar1.Value += 1
@@ -114,10 +117,15 @@ Public Class Quiz
         If (Re = 6) Then
             SubmitResult()
             Try
+                Me.Close()
                 Dashboard.Show()
             Catch ex As Exception
             End Try
         End If
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class
 Public Class Question
