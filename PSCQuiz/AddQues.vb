@@ -6,6 +6,8 @@ Public Class AddQues
     Dim key As Char
     Private Sub AddQues_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("Malayalam")
+        ComboBox1.Items.Add("English")
+        ComboBox1.SelectedValue = "English"
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -13,6 +15,9 @@ Public Class AddQues
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If (ComboBox1.SelectedItem = "Malayalam") Then
+            MsgBox("Malayalam Not Available in Demo Version")
+        End If
         If ((TextBox1.Text = "") Or (TextBox2.Text = "") Or (TextBox3.Text = "") Or (TextBox4.Text = "") Or (TextBox5.Text = "")) Then
 
             MsgBox("Please Enter all the fields")

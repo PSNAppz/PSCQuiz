@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-
 Public Class Form1
   
     Dim spath As String = Path.GetFullPath(Application.StartupPath)
@@ -16,5 +15,6 @@ Public Class Form1
         Me.Hide()
         Dashboard.Show()
     End Sub
+
 End Class
 

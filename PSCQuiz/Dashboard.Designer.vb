@@ -52,7 +52,7 @@ Partial Class Dashboard
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(185, 40)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Malayalam"
+        Me.Button1.Text = "English"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -62,7 +62,7 @@ Partial Class Dashboard
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(185, 40)
         Me.Button2.TabIndex = 0
-        Me.Button2.Text = "English"
+        Me.Button2.Text = "Malayalam"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button5
