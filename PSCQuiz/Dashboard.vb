@@ -8,12 +8,14 @@
         Quiz.Reset_all()
         Quiz.Show()
     End Sub
-
-    Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label2.Text = "Hello, " & My.Settings.User
+    Public Sub DashBoard_Update()
         Label4.Text += " " + Form1.TextBox1.Text
+        Label3.Text = "Your Score : " + Quiz.SCORE.ToString
         Button7.Hide()
         Button4.Hide()
+    End Sub
+    Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DashBoard_Update()
     End Sub
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         AddQues.Show()
@@ -33,5 +35,6 @@
         MsgBox("Scoreboard features are not supported in Demo Version")
 
     End Sub
+
 
 End Class

@@ -1,5 +1,5 @@
 ﻿If x is the first of five consecutive odd numbers then what is their average ?
-x
+x 
 x+1
 x+4
 x+3
@@ -29,7 +29,7 @@ x²-xy-x²yz
 x+xy-xz+xy²z
 1
 What is the largest possible value of the expression : (x+2)(3-x)(2+x)²(2x-6)(2x+4) ?
--576
+-576 
 12
 0
 Cannot be determined
