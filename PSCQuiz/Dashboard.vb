@@ -4,12 +4,16 @@
         Me.Close()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
-        Quiz.Reset_all()
-        Quiz.Show()
+        Try
+            Me.Hide()
+            Quiz.Reset_all()
+            Quiz.Show()
+        Catch xe As Exception
+            MsgBox(xe.ToString)
+        End Try
     End Sub
     Public Sub DashBoard_Update()
-        Label4.Text += " " + Form1.TextBox1.Text
+        Label4.Text = " " + Form1.TextBox1.Text
         Label3.Text = "Your Score : " + Quiz.SCORE.ToString
         Button7.Hide()
         Button4.Hide()
