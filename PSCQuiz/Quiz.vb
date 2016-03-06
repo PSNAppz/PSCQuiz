@@ -3,7 +3,7 @@ Imports System.Runtime.InteropServices
 
 Public Class Quiz
     Public ques As Integer = 1
-    Dim Shuffle = New Integer() {}
+    Dim Shuffle As Integer = 0
     Dim SCORE As Integer = 0
     Dim val As Integer = 30
     Public anskey As String

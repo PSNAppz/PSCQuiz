@@ -253,7 +253,7 @@ Partial Class AddQues
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Name = "AddQues"
-        Me.Text = "AddQues"
+        Me.Text = "Add Question"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

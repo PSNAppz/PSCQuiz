@@ -22,11 +22,9 @@ Partial Class SplashScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -44,21 +42,23 @@ Partial Class SplashScreen
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 72.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Cornsilk
         Me.Label2.Location = New System.Drawing.Point(102, 84)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(452, 128)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "PSC Quiz"
         '
-        'ProgressBar1
+        'Label3
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(0, 326)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(657, 10)
-        Me.ProgressBar1.TabIndex = 2
-        '
-        'Timer1
-        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Cornsilk
+        Me.Label3.Location = New System.Drawing.Point(262, 225)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(111, 21)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Demo Version"
         '
         'SplashScreen
         '
@@ -67,7 +67,7 @@ Partial Class SplashScreen
         Me.BackColor = System.Drawing.Color.Crimson
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(658, 329)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -81,6 +81,5 @@ Partial Class SplashScreen
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label3 As Label
 End Class

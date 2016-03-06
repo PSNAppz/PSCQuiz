@@ -134,11 +134,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Quiz.Designer.vb">
+    <Compile Include="..\..\..\Desktop\New folder\Quiz.Designer.vb">
       <DependentUpon>Quiz.vb</DependentUpon>
+      <Link>Quiz.Designer.vb</Link>
     </Compile>
-    <Compile Include="Quiz.vb">
+    <Compile Include="..\..\..\Desktop\New folder\Quiz.vb">
       <SubType>Form</SubType>
+      <Link>Quiz.vb</Link>
     </Compile>
     <Compile Include="Registeration.Designer.vb">
       <DependentUpon>Registeration.vb</DependentUpon>
@@ -171,8 +173,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Quiz.resx">
+    <EmbeddedResource Include="..\..\..\Desktop\New folder\Quiz.resx">
       <DependentUpon>Quiz.vb</DependentUpon>
+      <Link>Quiz.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Registeration.resx">
       <DependentUpon>Registeration.vb</DependentUpon>
